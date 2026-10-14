@@ -1,0 +1,26 @@
+colorScheme = "blowfish"
+defaultAppearance = "light"
+autoSwitchAppearance = true
+enableSearch = true
+enableCodeCopy = true
+mainSections = ["posts"]
+description = "Royce Chase 的个人技术门户，记录后端工程、软件架构、工业软件、AI 与 HomeLab 实践。"
+dateFormat = "2006-01-02"
+
+[author]
+  name = "Royce Chase"
+  headline = "Backend Engineer"
+  bio = "Architecture · Industrial Software · AI · HomeLab"
+  links = [{ github = "https://github.com/RoyceChase" }]
+
+[homepage]
+  layout = "profile"
+  showRecent = true
+  showRecentItems = 5
+  showMoreLink = true
+  showMoreLinkDest = "/posts/"
+
+[article]
+  showTableOfContents = true
+  showReadingTime = true
+  showWordCount = true

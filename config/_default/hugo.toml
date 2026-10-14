@@ -1,0 +1,16 @@
+baseURL = "https://roycechase.com/"
+title = "RoyceChase"
+theme = "blowfish"
+defaultContentLanguage = "zh-cn"
+disableLanguages = ["en"]
+locale = "zh-CN"
+hasCJKLanguage = true
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+
+[pagination]
+  pagerSize = 10
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

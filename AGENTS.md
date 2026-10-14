@@ -279,6 +279,15 @@ docs: 更新文档
 
 ## AI Agent 工作规则
 
+### 持久维护入口
+
+- 开始任务时阅读 `docs/TODO.md`，了解未完成事项和后续可选方向。
+- `AGENTS.md` 是统一规则入口；`.agents/skills/` 保存 OpenSpec 工作流，不另建重复的 `.agent` 规则目录。
+- 正式功能或架构变更使用 OpenSpec，先读取 `openspec/config.yaml` 及相关 specs / changes，再形成提案、设计和任务。简单文案、文档或小配置修正可直接处理。
+- `docs/TODO.md` 记录待办；`openspec/specs/` 记录已落地需求；`openspec/changes/` 记录进行中的变更及归档。未实施设想不得写成已完成需求。
+- 完成工作后更新对应待办和变更记录，保留必要验证结果，不复制聊天流水账。不因待办存在就自动实施。
+- `docs/project-context.md` 是初始规划快照；当前实现以代码、有效规格及最新验证结果为准。
+
 Agent 修改项目时必须：
 
 ### 1. 先理解再修改

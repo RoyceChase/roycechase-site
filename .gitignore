@@ -1,4 +1,7 @@
 HELP.md
+/public/
+/resources/_gen/
+/.hugo_build.lock
 temp/
 target/
 !.mvn/wrapper/maven-wrapper.jar
@@ -49,5 +52,5 @@ CLAUDE.md
 .opencode
 .devin
 
-/openspec
-.openspec
+#/openspec
+#.openspec
