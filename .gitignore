@@ -1,0 +1,54 @@
+HELP.md
+temp/
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+### VS Code ###
+.vscode/
+log.path_IS_UNDEFINED
+logPath_IS_UNDEFINED
+iot.yml
+auth.yml
+tree.txt
+
+### agent&tools ###
+.agents
+AGENTS.md
+
+.codegraph
+.gitnexus
+
+.claude
+CLAUDE.md
+
+.opencode
+.devin
+
+/openspec
+.openspec
+/docs
