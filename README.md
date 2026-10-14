@@ -53,7 +53,13 @@ theme = "blowfish"
 
 Hugo loads this directory automatically. Keep site configuration here instead of adding a second root `hugo.toml`. The site currently uses Chinese only; article files stay in `content/posts/`.
 
-The homepage uses Blowfish's profile layout and lists the five latest posts. JSON output supports site search. Add Projects and About navigation when those pages exist. Theme defaults remain inherited; only project-specific settings are overridden.
+The homepage uses a project-owned custom layout and lists the five latest posts. JSON output supports site search. Add Projects and About navigation when those pages exist. Theme defaults remain inherited; only project-specific settings are overridden.
+
+### Appearance
+
+The portal defaults to dark mode; manual appearance preferences remain saved. `assets/css/custom.css` owns the neutral palette, blue accents, rounded navigation and responsive typography. `layouts/partials/home/custom.html` renders the homepage identity and links using the existing author configuration and Markdown content.
+
+To restore the standard profile layout, set `homepage.layout = "profile"`, `defaultAppearance = "light"` and `autoSwitchAppearance = true`, then remove the project CSS and custom homepage partial. The Blowfish submodule remains unchanged.
 
 ## Local Development
 

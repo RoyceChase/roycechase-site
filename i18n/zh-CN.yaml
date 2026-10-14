@@ -1,0 +1,8 @@
+nav:
+  close_menu: "关闭菜单"
+  footer_menu: "页脚导航"
+  main_menu: "主导航"
+  mobile_menu: "移动端菜单"
+  scroll_to_top_title: "返回顶部"
+  skip_to_main: "跳至主要内容"
+  toggle_submenu: "展开子菜单"

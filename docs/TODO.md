@@ -2,6 +2,7 @@
 
 ## 近期
 
+- [x] 调整门户配色与首页样式，参考 merox 的深灰、蓝色强调和圆角导航；已验证深浅色切换、桌面 / 手机布局、搜索与键盘焦点。变更：[merox-inspired-portal-style](../openspec/changes/merox-inspired-portal-style/proposal.md)，实现完成，待归档。
 - [ ] 完善个人门户首页，补充真实的 Featured Projects 和个人介绍。
 - [ ] 建立 Projects / About 页面，再添加对应导航。
 - [ ] 接入 Cloudflare Pages，确认 Hugo 版本与子模块拉取流程，验证预览部署后绑定 roycechase.com。

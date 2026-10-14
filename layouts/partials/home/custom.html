@@ -1,0 +1,16 @@
+<article class="portal-intro">
+  <header>
+    <p class="portal-role">{{ .Site.Params.author.headline }}</p>
+    <h1>{{ .Site.Params.author.name | default .Site.Title }}</h1>
+    <p class="portal-topics">{{ .Site.Params.author.bio }}</p>
+  </header>
+  <div class="portal-description prose dark:prose-invert">{{ .Content }}</div>
+  <nav class="portal-actions" aria-label="首页快捷入口">
+    <a class="portal-action" href="{{ "posts/" | relLangURL }}">阅读文章 <span aria-hidden="true">↗</span></a>
+    {{ range .Site.Params.author.links }}
+      {{ with .github }}
+        <a class="portal-action portal-action-secondary" href="{{ . }}" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      {{ end }}
+    {{ end }}
+  </nav>
+</article>

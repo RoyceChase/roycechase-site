@@ -1,6 +1,7 @@
 colorScheme = "blowfish"
-defaultAppearance = "light"
-autoSwitchAppearance = true
+defaultAppearance = "dark"
+autoSwitchAppearance = false
+disableTextInHeader = false
 enableSearch = true
 enableCodeCopy = true
 mainSections = ["posts"]
@@ -14,7 +15,7 @@ dateFormat = "2006-01-02"
   links = [{ github = "https://github.com/RoyceChase" }]
 
 [homepage]
-  layout = "profile"
+  layout = "custom"
   showRecent = true
   showRecentItems = 5
   showMoreLink = true
@@ -24,3 +25,9 @@ dateFormat = "2006-01-02"
   showTableOfContents = true
   showReadingTime = true
   showWordCount = true
+
+[header]
+  layout = "basic"
+
+[footer]
+  showAppearanceSwitcher = true

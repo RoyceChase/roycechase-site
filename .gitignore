@@ -2,6 +2,7 @@ HELP.md
 /public/
 /resources/_gen/
 /.hugo_build.lock
+/.playwright-mcp/
 temp/
 target/
 !.mvn/wrapper/maven-wrapper.jar
