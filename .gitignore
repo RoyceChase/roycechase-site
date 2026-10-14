@@ -37,8 +37,8 @@ auth.yml
 tree.txt
 
 ### agent&tools ###
-.agents
-AGENTS.md
+#.agents
+#AGENTS.md
 
 .codegraph
 .gitnexus
