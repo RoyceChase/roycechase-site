@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex, nofollow"><meta name="publication-status" content="draft"><link rel="icon" href="data:,"><title>HomeLab · 从设备到架构（草稿）</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<nav><a href="#overview" class="brand"><span>RC</span> Royce Chase <small>/ HomeLab</small></a><a href="#workspace">探索架构 ↗</a></nav>
+<main>
+<section class="hero" id="overview">
+<div class="intro"><p class="eyebrow">HOMELAB / SYSTEM TOUR</p><h1>三台设备，<br>一套完整的<br><em>系统思考。</em></h1><p class="lead">从一台物理主机，到虚拟化、网络与断电保障。点击设备，看看它们如何共同工作。</p><dl><div><dt>虚拟化底座</dt><dd>Proxmox VE</dd></div><div><dt>职责划分</dt><dd>服务 · 旁路由 · 隧道</dd></div><div><dt>电源保障</dt><dd>NUT · USB</dd></div></dl><p class="prototype">交互 MVP · 摆放与比例为展示示意</p></div>
+<div class="showcase"><div class="device-card" aria-live="polite"><div><small id="device-kicker">COMPUTE / VIRTUALIZATION</small><h2 id="device-title">机械革命 iMini</h2><p id="device-description">一台物理主机，承载服务、旁路由与隧道虚拟机。</p></div><a id="explore" href="#compute">查看系统架构 <span>↗</span></a></div>
+<div class="scene-header"><span class="dot"></span> PHYSICAL LAYER <span class="scene-number">01 — 03</span></div>
+<div id="viewport" tabindex="0" role="group" aria-label="设备全景，拖动或方向键旋转"><div id="scene"><div id="rack"></div><div class="device" data-device="compute" id="pc"><span class="device-label">01 / COMPUTE</span></div><div class="device" data-device="network" id="router"><span class="device-label">02 / NETWORK</span></div><div class="device" data-device="power" id="ups"><span class="device-label">03 / POWER</span></div></div></div>
+<div class="scene-tools"><span>拖动旋转 · 点击设备探索</span><button id="reset">复位视角 ↺</button></div>
+<div class="device-tabs" aria-label="选择设备"><button data-pick="compute" aria-pressed="true">01 迷你主机</button><button data-pick="network" aria-pressed="false">02 路由器</button><button data-pick="power" aria-pressed="false">03 UPS</button></div>
+
+</div>
+</section>
+<section class="workspace" id="workspace">
+<div class="section-heading"><div><p class="eyebrow">LOGICAL LAYER / EXPLORE THE SYSTEM</p><h2 id="architecture-title" tabindex="-1">从物理主机，深入系统内部。</h2></div><a href="#overview" id="back">↑ 返回设备全景</a></div>
+<p class="workspace-caption">选择一种关系，再点击节点了解职责与设计权衡。网络链路为概念示意，服务名称待补充。</p>
+<div class="view-tabs" role="group" aria-label="架构视图"><button data-view="compute" aria-pressed="true">01 部署结构</button><button data-view="inbound" aria-pressed="false">02 入站访问</button><button data-view="network" aria-pressed="false">03 出站访问</button><button data-view="power" aria-pressed="false">04 停机保障</button></div>
+<div class="architecture"><div class="diagram-panel"><div class="diagram-header"><span id="diagram-label">COMPUTE TOPOLOGY</span><span class="legend"><i></i> 链路动画示意 · 点击节点查看说明</span></div><div id="diagram"></div><p id="diagram-note"></p></div><aside id="detail" aria-live="polite"></aside></div>
+<div class="principles"><article><span>01 / BOUNDARIES</span><h3>按职责组织系统</h3><p>服务、出站策略和访问入口分别承载，维护时能明确变更范围；虚拟机仍共享同一台物理主机。</p></article><article><span>02 / TRAFFIC</span><h3>让访问路径可解释</h3><p>分别阅读入站访问与出站访问，理解隧道和旁路由各自承担的角色。</p></article><article><span>03 / RECOVERY</span><h3>让停机成为设计的一部分</h3><p>UPS 状态读取与断电自动关机已完成实测。细分关机耗时和恢复启动行为待补充记录。</p></article></div>
+</section>
+<footer>Royce Chase / HomeLab <span>静态交互原型 · 无实时设备连接</span></footer>
+</main><noscript><p>此原型需要 JavaScript 展示设备和架构交互。PVE 承载主服务器、旁路由与隧道虚拟机；UPS 由宿主机 NUT 管理。</p></noscript><script type="module" src="app.js"></script>
+</body></html>
