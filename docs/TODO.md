@@ -5,7 +5,8 @@
 - [x] 调整门户配色与首页样式，参考 merox 的深灰、蓝色强调和圆角导航；已验证深浅色切换、桌面 / 手机布局、搜索与键盘焦点。变更：[merox-inspired-portal-style](../openspec/changes/merox-inspired-portal-style/proposal.md)，实现完成，待归档。
 - [ ] 完善个人门户首页，补充真实的 Featured Projects 和个人介绍。
 - [ ] 建立 Projects / About 页面，再添加对应导航。
-- [ ] 接入 Cloudflare Pages，确认 Hugo 版本与子模块拉取流程，验证预览部署后绑定 roycechase.com。
+- [x] 接入 Cloudflare Pages Git 自动部署并绑定 roycechase.com；2026-10-15 推送文章提交 c0249cf 后，主域名与 pages.dev 新文章均返回 200，canonical 指向主域名。Hugo Extended 与子模块拉取已验证；曾发生一次子模块拉取失败，后续同提交部署成功。
+- [ ] 用非 main 分支验证 Preview 部署及其 CF_PAGES_URL 构建地址；目前已验证生产分支，尚未验证预览分支条件。
 - [ ] 处理 Blowfish 声明最高支持 Hugo 0.167.0、本机为 0.168.0 的兼容提示；当前基础构建已通过。
 - [ ] 将 Node.js 从 20.18.0 升级到满足 OpenSpec 1.14.1 要求的版本（>=20.19.0）；目前初始化成功，但有 engine 警告。
 
